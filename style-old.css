@@ -1,0 +1,123 @@
+@font-face {
+    font-family: 'Outfit';
+    src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'YoungSerif';
+    src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+* {
+    font-family: 'Outfit', 'YoungSerif';
+    box-sizing: border-box;
+}
+
+:root {
+    --Nutmeg: hsl(14, 45%, 36%);
+    --DarkRaspberry: hsl(332, 51%, 32%);
+    --White: hsl(0, 0%, 100%);
+    --RoseWhite: hsl(330, 100%, 98%);
+    --Eggshell: hsl(30, 54%, 90%);
+    --LightGrey: hsl(30, 18%, 87%);
+    --WengeBrown: hsl(30, 10%, 34%);
+    --DarkCharcoal: hsl(24, 5%, 18%);
+}
+
+h1 {
+    font-family: 'YoungSerif';
+    font-weight: 400;
+}
+
+h2 {
+    font-family: 'YoungSerif';
+    font-weight: 400;
+    margin: 0.5rem;
+    color: var(--Nutmeg);
+}
+
+h3 {
+    margin: 0;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0.5rem 0;
+    padding: 0 10px;
+}
+
+body {
+    margin: 10vh 0;
+    height: auto;
+    background-color: var(--Eggshell);
+}
+
+.container {
+    width: 60vw;
+    height: auto;
+    padding: 1.5rem;
+    margin: auto;
+    border-radius: 2rem;
+    background-color: var(--White);
+}
+
+.container header img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1.5rem;
+}
+
+.container section li {
+    padding: 5px;
+}
+
+.container section li::marker {
+    color: var(--Nutmeg);
+}
+
+.container section .list-card {
+    border-radius: 1.5rem;
+    background-color: var(--RoseWhite);
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.container section .list-card h3 {
+    color: var(--Nutmeg);
+    margin-bottom: 3px;
+}
+
+.container section .ingredients {
+    padding: 0.5rem;
+}
+
+.container section .instructions span {
+    color: var(--Nutmeg);
+}
+
+.container section .instructions span::after {
+    content: '';
+    margin-right: 10px;
+}
+
+.container footer .nutrition .details {
+    width: 100%;
+    padding: 0 20px;
+}
+
+.container footer .nutrition .details div {
+    display: inline-block;
+    width: 50%;
+}
+
+@media (max-width: 375px) {
+    body {
+        background-color: var(--White);
+    }
+
+    .container {
+        width: 100vw;
+        margin: 0;
+    }
+}
