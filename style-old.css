@@ -111,8 +111,8 @@ body {
     width: 50%;
 }
 
-/* I don't think 375px is the best choice so I used 475px instead */
-@media (max-width: 476px) {
+/* I don't think 375px is the best choice so I used 526px instead */
+@media (max-width: 527px) {
     body {
         background-color: var(--White);
     }
